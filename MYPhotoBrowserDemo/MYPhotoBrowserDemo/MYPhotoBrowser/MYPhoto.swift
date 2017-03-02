@@ -27,9 +27,13 @@ class MYPhoto: NSObject {
         }
     }
     
-    var placeholder: UIImage?
+    var index: Int = 0
     
-    var capture: UIImage? {
+    var adjustMode = MYPhotoAdjustment.moveNo
+    
+    internal var placeholder: UIImage?
+    
+    internal var capture: UIImage? {
         guard let srcImageView = self.srcImageView else {
             return nil
         }
@@ -40,15 +44,11 @@ class MYPhoto: NSObject {
         }
     }
     
-    var isFirstShow = true
+    internal var isFirstShow = true
     
-    var adjustMode = MYPhotoAdjustment.moveNo
+    internal var isSaved = false
     
-    var isSaved = false
-    
-    var index: Int = 0
-    
-    func capture(view: UIView) -> UIImage? {
+    fileprivate func capture(view: UIView) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, 0.0)
         guard let context = UIGraphicsGetCurrentContext() else {
             return nil

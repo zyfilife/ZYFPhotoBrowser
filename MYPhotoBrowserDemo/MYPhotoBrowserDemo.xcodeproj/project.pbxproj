@@ -17,6 +17,7 @@
 		403F206D1E5BE9D800D94993 /* MYPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F206C1E5BE9D800D94993 /* MYPhoto.swift */; };
 		403F206F1E5C0C9200D94993 /* MYPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F206E1E5C0C9200D94993 /* MYPhotoBrowser.swift */; };
 		403F20711E5C349500D94993 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F20701E5C349500D94993 /* CollectionViewController.swift */; };
+		4049DFAC1E641F930019E2A5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049DFAB1E641F930019E2A5 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		403F206C1E5BE9D800D94993 /* MYPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPhoto.swift; sourceTree = "<group>"; };
 		403F206E1E5C0C9200D94993 /* MYPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MYPhotoBrowser.swift; sourceTree = "<group>"; };
 		403F20701E5C349500D94993 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		4049DFAB1E641F930019E2A5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		868D377D882434E4186C14D3 /* Pods-MYPhotoBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYPhotoBrowserDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYPhotoBrowserDemo/Pods-MYPhotoBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B6ABF4E5FECF6D90B5476951 /* Pods-MYPhotoBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYPhotoBrowserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYPhotoBrowserDemo/Pods-MYPhotoBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EBE9864BDEFD6829D9BB1BCE /* Pods_MYPhotoBrowserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYPhotoBrowserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				403F205E1E5BD55C00D94993 /* LaunchScreen.storyboard */,
 				403F20611E5BD55C00D94993 /* Info.plist */,
 				403F20701E5C349500D94993 /* CollectionViewController.swift */,
+				4049DFAB1E641F930019E2A5 /* CollectionViewCell.swift */,
 				403F20671E5BD68800D94993 /* MYPhotoBrowser */,
 			);
 			path = MYPhotoBrowserDemo;
@@ -235,6 +238,7 @@
 				403F20711E5C349500D94993 /* CollectionViewController.swift in Sources */,
 				403F206D1E5BE9D800D94993 /* MYPhoto.swift in Sources */,
 				403F20691E5BD6BE00D94993 /* SDWebImageManagerExtensions.swift in Sources */,
+				4049DFAC1E641F930019E2A5 /* CollectionViewCell.swift in Sources */,
 				403F206F1E5C0C9200D94993 /* MYPhotoBrowser.swift in Sources */,
 				403F20561E5BD55C00D94993 /* AppDelegate.swift in Sources */,
 				403F206B1E5BD85B00D94993 /* MYPhotoView.swift in Sources */,

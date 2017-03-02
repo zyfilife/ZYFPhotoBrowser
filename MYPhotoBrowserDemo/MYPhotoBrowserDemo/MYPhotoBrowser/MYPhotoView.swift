@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 protocol MYPhotoViewDelegate:NSObjectProtocol {
     func photoViewImageFinishLoad(photoView: MYPhotoView)
@@ -97,15 +98,14 @@ class MYPhotoView: UIScrollView, UIScrollViewDelegate {
         
         if let srcImageView = self.photo?.srcImageView {
             
-            if srcImageView.clipsToBounds {
-                
-            }
+//            if srcImageView.clipsToBounds {
+//                self.reset()
+//            }
             
             let window = UIApplication.shared.delegate!.window!
             let rect = window!.convert(srcImageView.frame, from: srcImageView.superview)
-            print(rect)
             
-            UIView.animate(withDuration: duration + 0.25, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: { 
+            UIView.animate(withDuration: duration + 0.25, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
                 self.imageView.frame = rect
                 self.imageView.alpha = 0
                 if let images = self.imageView.image?.images {
@@ -156,8 +156,7 @@ class MYPhotoView: UIScrollView, UIScrollViewDelegate {
             self.imageView.image = image
         }else {
             self.isScrollEnabled = false
-            self.imageView.sd_setImage(with: self.photo?.url, placeholderImage: self.photo?.srcImageView?.image, options: .lowPriority, progress: { (_, _) in
-                
+            self.imageView.sd_setImage(with: self.photo?.url, placeholderImage: self.photo?.srcImageView?.image, options: .lowPriority, progress: { (_, _, _) in
             }, completed: { (image, _, _, _) in
                 self.photoDidFinishLoad(with: image)
             })

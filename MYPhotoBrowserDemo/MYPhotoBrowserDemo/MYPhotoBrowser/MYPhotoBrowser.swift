@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 let kPadding: CGFloat = 10
 let kPhotoViewTagOffset = 1000
@@ -36,15 +37,19 @@ class MYPhotoBrowser: UIViewController, UIScrollViewDelegate, MYPhotoViewDelegat
                 item.isFirstShow = i == self.currentPhotoIndex
                 i += 1
             }
-            
-            if self.isViewLoaded {
-                self.photoScrollView.contentOffset = CGPoint(x: CGFloat(self.currentPhotoIndex)*self.photoScrollView.frame.size.width, y: 0)
-                self.showPhotos()
-            }
         }
     }
     
-    var photoScrollView: UIScrollView!
+    lazy var photoScrollView: UIScrollView = {
+        let view = UIScrollView()
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.isPagingEnabled = true
+        view.delegate = self
+        view.showsVerticalScrollIndicator = false
+        view.showsHorizontalScrollIndicator = false
+        view.backgroundColor = .clear
+        return view
+    }()
     
     override func loadView() {
         super.loadView()
@@ -54,24 +59,13 @@ class MYPhotoBrowser: UIViewController, UIScrollViewDelegate, MYPhotoViewDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        photoScrollView = UIScrollView()
-        var frame = self.view.bounds
-        frame.origin.x -= kPadding
-        frame.size.width += 2*kPadding
-        photoScrollView.frame = frame
-        photoScrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        photoScrollView.isPagingEnabled = true
-        photoScrollView.delegate = self
-        photoScrollView.showsVerticalScrollIndicator = false
-        photoScrollView.showsHorizontalScrollIndicator = false
-        photoScrollView.backgroundColor = .clear
-        photoScrollView.contentSize = CGSize(width: frame.size.width*CGFloat(self.photos.count), height: 0)
-        photoScrollView.contentOffset = CGPoint(x: CGFloat(self.currentPhotoIndex)*frame.size.width, y: 0)
-        
         self.view.backgroundColor = .black
-
         self.view.addSubview(self.photoScrollView)
+        self.photoScrollView.frame = CGRect(x: -kPadding, y: 0, width: self.view.frame.size.width + 2*kPadding, height: self.view.frame.size.height)
+        self.photoScrollView.contentSize = CGSize(width: self.photoScrollView.frame.size.width*CGFloat(self.photos.count), height: self.photoScrollView.frame.size.height)
+        self.photoScrollView.contentOffset.x = CGFloat(self.currentPhotoIndex)*self.photoScrollView.frame.size.width
+        
+        self.showPhotos()
         // Do any additional setup after loading the view.
     }
 
@@ -80,12 +74,16 @@ class MYPhotoBrowser: UIViewController, UIScrollViewDelegate, MYPhotoViewDelegat
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.photoScrollView.frame = CGRect(x: -kPadding, y: 0, width: self.view.frame.size.width + 2*kPadding, height: self.view.frame.size.height)
+    }
+    
     func show() {
         UIApplication.shared.keyWindow?.addSubview(self.view)
         UIApplication.shared.keyWindow?.rootViewController?.addChildViewController(self)
-        if self.currentPhotoIndex == 0 {
-            self.showPhotos()
-        }
+        
+        
     }
     
     func showPhotos() {
