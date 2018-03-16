@@ -6,21 +6,21 @@
 
 ### 如何使用
 
-```
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var photos = [ZYFPhoto]()
-        var i = 0
-        for item in collectionView.visibleCells {
-            guard let cell = item as? CollectionViewCell else {
-                return
-            }
-            let photo = ZYFPhoto(image: cell.imageView.image!, index: i, sourceImageView: cell.imageView)
-            i += 1
-            photos.append(photo)
+```swift
+override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    var photos = [ZYFPhoto]()
+    var i = 0
+    for item in collectionView.visibleCells {
+        guard let cell = item as? CollectionViewCell else {
+            return
         }
-        let photoBrowser = ZYFPhotoBrowser()
-        photoBrowser.photos = photos
-        photoBrowser.firstShowIndex = indexPath.row
-        photoBrowser.show()
+        let photo = ZYFPhoto(image: cell.imageView.image!, index: i, sourceImageView: cell.imageView)
+        i += 1
+        photos.append(photo)
     }
+    let photoBrowser = ZYFPhotoBrowser()
+    photoBrowser.photos = photos
+    photoBrowser.firstShowIndex = indexPath.row
+    photoBrowser.show()
+}
 ```
