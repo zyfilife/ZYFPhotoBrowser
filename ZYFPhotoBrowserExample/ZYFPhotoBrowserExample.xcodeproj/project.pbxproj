@@ -11,13 +11,13 @@
 		405633A7205B5C2500DA883E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405633A5205B5C2500DA883E /* Main.storyboard */; };
 		405633A9205B5C2500DA883E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 405633A8205B5C2500DA883E /* Assets.xcassets */; };
 		405633AC205B5C2500DA883E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 405633AA205B5C2500DA883E /* LaunchScreen.storyboard */; };
-		40E5E79F205BA8B800B95E25 /* ZYFLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E79A205BA8B800B95E25 /* ZYFLoadingView.swift */; };
-		40E5E7A0205BA8B800B95E25 /* ZYFPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E79B205BA8B800B95E25 /* ZYFPhoto.swift */; };
-		40E5E7A1205BA8B800B95E25 /* ZYFPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E79C205BA8B800B95E25 /* ZYFPhotoBrowser.swift */; };
-		40E5E7A2205BA8B800B95E25 /* ZYFPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E79D205BA8B800B95E25 /* ZYFPhotoView.swift */; };
-		40E5E7A3205BA8B800B95E25 /* SDWebImageManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E79E205BA8B800B95E25 /* SDWebImageManagerExtensions.swift */; };
 		40E5E7A6205BA8C300B95E25 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7A4205BA8C300B95E25 /* CollectionViewController.swift */; };
 		40E5E7A7205BA8C300B95E25 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7A5205BA8C300B95E25 /* CollectionViewCell.swift */; };
+		40E5E7AE205BAC8800B95E25 /* ZYFPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7A9205BAC8800B95E25 /* ZYFPhotoView.swift */; };
+		40E5E7AF205BAC8800B95E25 /* ZYFLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7AA205BAC8800B95E25 /* ZYFLoadingView.swift */; };
+		40E5E7B0205BAC8800B95E25 /* SDWebImageManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7AB205BAC8800B95E25 /* SDWebImageManagerExtensions.swift */; };
+		40E5E7B1205BAC8800B95E25 /* ZYFPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7AC205BAC8800B95E25 /* ZYFPhotoBrowser.swift */; };
+		40E5E7B2205BAC8800B95E25 /* ZYFPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E5E7AD205BAC8800B95E25 /* ZYFPhoto.swift */; };
 		EB4BBB3FCC21C614B803803D /* Pods_ZYFPhotoBrowserExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BFB233A7602BFE960CC5F6 /* Pods_ZYFPhotoBrowserExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,13 +28,13 @@
 		405633A8205B5C2500DA883E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405633AB205B5C2500DA883E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405633AD205B5C2500DA883E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40E5E79A205BA8B800B95E25 /* ZYFLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFLoadingView.swift; sourceTree = "<group>"; };
-		40E5E79B205BA8B800B95E25 /* ZYFPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFPhoto.swift; sourceTree = "<group>"; };
-		40E5E79C205BA8B800B95E25 /* ZYFPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFPhotoBrowser.swift; sourceTree = "<group>"; };
-		40E5E79D205BA8B800B95E25 /* ZYFPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFPhotoView.swift; sourceTree = "<group>"; };
-		40E5E79E205BA8B800B95E25 /* SDWebImageManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWebImageManagerExtensions.swift; sourceTree = "<group>"; };
 		40E5E7A4205BA8C300B95E25 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		40E5E7A5205BA8C300B95E25 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		40E5E7A9205BAC8800B95E25 /* ZYFPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFPhotoView.swift; sourceTree = "<group>"; };
+		40E5E7AA205BAC8800B95E25 /* ZYFLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFLoadingView.swift; sourceTree = "<group>"; };
+		40E5E7AB205BAC8800B95E25 /* SDWebImageManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWebImageManagerExtensions.swift; sourceTree = "<group>"; };
+		40E5E7AC205BAC8800B95E25 /* ZYFPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFPhotoBrowser.swift; sourceTree = "<group>"; };
+		40E5E7AD205BAC8800B95E25 /* ZYFPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYFPhoto.swift; sourceTree = "<group>"; };
 		58BFB233A7602BFE960CC5F6 /* Pods_ZYFPhotoBrowserExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFPhotoBrowserExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE84F9F395096765F33EB7A /* Pods-ZYFPhotoBrowserExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFPhotoBrowserExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFPhotoBrowserExample/Pods-ZYFPhotoBrowserExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5FCB9D3D8938EEDA5ECF6ED5 /* Pods-ZYFPhotoBrowserExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFPhotoBrowserExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFPhotoBrowserExample/Pods-ZYFPhotoBrowserExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		40563395205B5C2500DA883E = {
 			isa = PBXGroup;
 			children = (
-				40C31159205B5F6900C7E0C0 /* ZYFPhotoBrowser */,
+				40E5E7A8205BAC8800B95E25 /* ZYFPhotoBrowser */,
 				405633A0205B5C2500DA883E /* ZYFPhotoBrowserExample */,
 				4056339F205B5C2500DA883E /* Products */,
 				BC7EB9B17ADC4AB0E3AD41A2 /* Pods */,
@@ -85,16 +85,17 @@
 			path = ZYFPhotoBrowserExample;
 			sourceTree = "<group>";
 		};
-		40C31159205B5F6900C7E0C0 /* ZYFPhotoBrowser */ = {
+		40E5E7A8205BAC8800B95E25 /* ZYFPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				40E5E79C205BA8B800B95E25 /* ZYFPhotoBrowser.swift */,
-				40E5E79B205BA8B800B95E25 /* ZYFPhoto.swift */,
-				40E5E79D205BA8B800B95E25 /* ZYFPhotoView.swift */,
-				40E5E79A205BA8B800B95E25 /* ZYFLoadingView.swift */,
-				40E5E79E205BA8B800B95E25 /* SDWebImageManagerExtensions.swift */,
+				40E5E7A9205BAC8800B95E25 /* ZYFPhotoView.swift */,
+				40E5E7AA205BAC8800B95E25 /* ZYFLoadingView.swift */,
+				40E5E7AB205BAC8800B95E25 /* SDWebImageManagerExtensions.swift */,
+				40E5E7AC205BAC8800B95E25 /* ZYFPhotoBrowser.swift */,
+				40E5E7AD205BAC8800B95E25 /* ZYFPhoto.swift */,
 			);
-			path = ZYFPhotoBrowser;
+			name = ZYFPhotoBrowser;
+			path = ../ZYFPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		886F4EAB2538E6055FED0BCA /* Frameworks */ = {
@@ -244,13 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				405633A2205B5C2500DA883E /* AppDelegate.swift in Sources */,
-				40E5E7A3205BA8B800B95E25 /* SDWebImageManagerExtensions.swift in Sources */,
+				40E5E7B0205BAC8800B95E25 /* SDWebImageManagerExtensions.swift in Sources */,
+				40E5E7B1205BAC8800B95E25 /* ZYFPhotoBrowser.swift in Sources */,
 				40E5E7A7205BA8C300B95E25 /* CollectionViewCell.swift in Sources */,
-				40E5E7A0205BA8B800B95E25 /* ZYFPhoto.swift in Sources */,
-				40E5E79F205BA8B800B95E25 /* ZYFLoadingView.swift in Sources */,
+				40E5E7B2205BAC8800B95E25 /* ZYFPhoto.swift in Sources */,
+				40E5E7AF205BAC8800B95E25 /* ZYFLoadingView.swift in Sources */,
 				40E5E7A6205BA8C300B95E25 /* CollectionViewController.swift in Sources */,
-				40E5E7A1205BA8B800B95E25 /* ZYFPhotoBrowser.swift in Sources */,
-				40E5E7A2205BA8B800B95E25 /* ZYFPhotoView.swift in Sources */,
+				40E5E7AE205BAC8800B95E25 /* ZYFPhotoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
